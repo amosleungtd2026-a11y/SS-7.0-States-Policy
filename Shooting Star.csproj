@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>cAlgo</RootNamespace>
+    <AssemblyName>Shooting Star</AssemblyName>
+    <AlgoBuild>true</AlgoBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Tests/**/*.cs" />
+    <Compile Remove="CloudPersistenceProbe/**/*.cs" />
+    <PackageReference Include="cTrader.Automate" Version="1.*" />
+  </ItemGroup>
+</Project>
